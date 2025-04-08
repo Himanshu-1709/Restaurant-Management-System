@@ -1,0 +1,99 @@
+:root {
+  --page-margin: min(2rem, 5vw);
+  --card-background: #faf2f0;
+  --card-text: #f66153;
+}
+
+body {
+  margin: 0;
+  font-family:  Shruti !important;
+  color: #444;
+}
+
+section {
+  display: grid;
+  grid-template-columns: var(--page-margin) [center-start] 1fr [center-end] var(--page-margin);
+
+  &>* {
+    grid-column: center;
+  }
+}
+
+.cards-wrapper {
+  grid-column: center-start / -1;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .card1 {
+    display: grid;
+    place-content: center;
+    background-color: var(--card-background);
+    color: var(--card-text);
+    font-size: 12px;
+    height: 2rem;
+    min-width: 5rem;
+    border-radius: 40px;
+    border:  solid 2px #fcebe9;
+    overflow: hidden;
+  }
+}
+.alert-primary{
+  background-color: #f66153 !important;
+}
+
+.qty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  border: solid 1px #f66153;
+  border-radius: 10px;
+  max-width: 72%;
+  height: 20pxs;
+  margin-top: 4%;
+}
+
+.bg-custom-2 {
+  background-color: #f66153;
+  border-radius: 40px;
+  height: 6%;
+  /* max-width: 75%; */
+  /* left: 6% !important; */
+}
+.item{
+  font-size: 14px;
+}
+
+ .qtyinput{
+  background-color: #f66153 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.btn{
+  color: #000!important;
+}
+
+.home{
+  color: rgb(246,97,83);
+}
+
+hr{
+  width: 98% !important;
+  margin-left: 10px!important;
+}
+
+.box{
+  /* background-color: #fde5e5; */
+  /* box-shadow: 0 4px 8px 0 rgba(206, 206, 206, 0), 0 8px 20px 0 rgba(143, 140, 140, 0.2); */
+  background-color: #fff7f7;
+  border-radius: 7px;
+}
+
